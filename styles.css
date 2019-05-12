@@ -28,6 +28,7 @@
 
 h1{
   padding-top: 1%;
+  font-family: 'Montserrat', sans-serif;
 }
 #pic-section{
   background-color: #262E42
@@ -49,7 +50,7 @@ h1{
 p{
   padding-top: 2%;
   font-size: 18px;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   color: #FDF8F8;
 }
 
@@ -78,4 +79,8 @@ p{
   margin-left: auto;
   margin-right: auto;
   width:50%;
+}
+
+form{
+  float: right;
 }

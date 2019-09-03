@@ -54,7 +54,7 @@
 .Container {
   position: relative;
   display: none;
-  padding-top: 5%;
+  padding-top: 18%;
 }
 
 .projectcontainer1 {
@@ -83,7 +83,7 @@
 /* Closable button inside the image */
 .closebtn {
   position: absolute;
-  top: 115px;
+  top: 175px;
   right: 5px;
   color: white;
   font-size: 40px;

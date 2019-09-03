@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>William Ye Projects</title>
+  </head>
+  <body background="images/tech.jpg">
+
+<div class = "container-fluid">
+  <div class="row">
+    <div id="header">
+      <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="Projects.html">Projects</a>
+          <a href="Resume.html">Resume</a>
+      </div>
+      <h1 class="text-center">Projects</h1>
+    </div>
+
+    <div class="projectcontainer1">
+    <h2 class="text-center"> Weightlift Tracker </h2>
+    <p class="projectinfo"> This was created using React for the frontend, Node.js for the backend and mysql database to store data.
+      User's can input their training maxes and look at their progress by navigating the top menu. Also included is a 
+      training log to keep track of current reps and sets on a specific excercise. At the bottom is a bmi calculator.
+      The project code can be viewed here <a href="https://github.com/williamye07/Lift-Tracker">https://github.com/williamye07/Lift-Tracker</a>.
+    </p>
+
+    <div class="Row">
+        <div class="Column">
+          <img src="images/trainingmaxes.JPG" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="Column">
+          <img src="images/progress.JPG" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="Column">
+          <img src="images/excerciselog.JPG" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="Column">
+          <img src="images/bmi.JPG" alt="Lights" onclick="myFunction(this);">
+        </div>
+    </div>
+  </div>
+
+    <div class="projectcontainer2">
+    <h2 class="text-center"> Twitch Dashboard</h2>
+    <p class="projectinfo">
+      This project was created using React along with the twitch.tv api for data retrieval. The dashboard displays 
+      the games with the most viewers in real time. There are also options to view the most watched streamers of all games.
+      It is also possible to click whichever stream you want to watch and it will allow you to watch it on twitch.
+      The project code can be viewed here <a href="https://github.com/williamye07/Twitch-Dashboard">https://github.com/williamye07/Twitch-Dashboard</a>. 
+    </p>
+
+    <div class="Row">
+        <div class="Column">
+          <img src="images/populargames.JPG" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="Column">
+          <img src="images/toplivestreams.JPG" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="Column">
+          <img src="images/topgame.JPG" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="Column">
+          <img src="images/viewercount.JPG" alt="Lights" onclick="myFunction(this);">
+        </div>
+    </div>
+
+  </div>
+
+      <div class="Container">
+          <!-- Close the image -->
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+          <!-- Expanded image -->
+          <img id="expandedImg" style="width:100%">
+        
+          <!-- Image text -->
+          <div id="imgtext"></div>
+      </div>
+
+      <script>
+        function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+      </script>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+</div>
+
+
+
+  </body>
+</html>
